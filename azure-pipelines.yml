@@ -12,7 +12,7 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'Spring-Oauth2-Auth-Server/pom.xml'
+    mavenPomFile: $(system.defaultWorkingDirectory)/Spring-Oauth2-Auth-Server/pom.xml
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
